@@ -16,7 +16,7 @@ public class AppTest {
         driver.get("http://www.google.pl");
         driver.findElement(By.xpath("//*[@id=\"gb_70\"]")).click();
 
-        Assert.assertEquals("Zaloguj się", driver.findElement(By.xpath("//*[@id=\"headingText\"]/span")).getText());
+        Assert.assertTrue(driver.findElement(By.xpath("//*[@id=\"headingText\"]/span")).getText().contains("Zaloguj"));
 
     }
 

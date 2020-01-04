@@ -2,5 +2,4 @@
 target/*
 */out/*
 *.iml
-pom.xml
 */build/*
